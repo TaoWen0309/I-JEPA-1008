@@ -1,4 +1,4 @@
 *.out
 *.SBATCH
 *.pyc
-__pycache__
+__pycache__/
