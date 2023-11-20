@@ -1,10 +1,3 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# All rights reserved.
-#
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-#
-
 import os
 
 # -- FOR DISTRIBUTED TRAINING ENSURE ONLY 1 DEVICE VISIBLE PER PROCESS
@@ -50,9 +43,8 @@ from src.helper import (
 from src.transforms import make_transforms
 
 # --
-log_timings = True
 log_freq = 10
-checkpoint_freq = 50
+checkpoint_freq = 5
 # --
 
 _GLOBAL_SEED = 0
