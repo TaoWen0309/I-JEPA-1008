@@ -29,7 +29,7 @@ export SINGULARITY_CACHEDIR=/tmp/$USER
 singularity exec --nv \
 --bind /scratch \
 --overlay /scratch/tw2672/pytorch/torch2cuda8.ext3:ro \
-/scratch/tw2672/pytorch/cuda11.7.99-cudnn8.5-devel-ubuntu22.04.2.sif \
+/scratch/tw2672/pytorch/cuda11.8.86-cudnn8.7-devel-ubuntu22.04.2.sif \
 /bin/bash -c "
 source /ext3/env.sh;python main_distributed.py --fname configs/in1k_vith14_ep300.yaml\
 --partition n1s8-v100-1\
