@@ -8,7 +8,7 @@ data:
   image_folder: tmp_images/
   num_workers: 2
   pin_mem: true
-  root_path: tmp/
+  root_path: /scratch/tw2672/
   use_color_distortion: false
   use_gaussian_blur: false
   use_horizontal_flip: false
