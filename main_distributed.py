@@ -77,7 +77,7 @@ def launch():
         folder=os.path.join(args.folder, 'job_%j'),
         slurm_max_num_timeout=20)
     executor.update_parameters(
-        # slurm_partition=args.partition,
+        slurm_partition=args.partition,
         slurm_mem_per_gpu='55G',
         timeout_min=args.time,
         nodes=args.nodes,

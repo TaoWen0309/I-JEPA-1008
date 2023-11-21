@@ -32,6 +32,7 @@ singularity exec --nv \
 /scratch/tw2672/pytorch/cuda11.7.99-cudnn8.5-devel-ubuntu22.04.2.sif \
 /bin/bash -c "
 source /ext3/env.sh;python main_distributed.py --fname configs/in1k_vith14_ep300.yaml\
+--partition partition=n1s8-v100-1\
 --nodes 1 --tasks-per-node 1\
 --time 1000
 "
