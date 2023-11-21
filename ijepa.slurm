@@ -17,7 +17,7 @@
 ##SBATCH --cpus-per-task=24
 
 #SBATCH --time=12:00:00
-<Right>#SATCH --output=demo_%j.out
+#SBATCH --output=demo_%j.out
 #SBATCH --error=demo_%j.err
 #SBATCH --exclusive
 #SBATCH --requeue
@@ -32,7 +32,7 @@ echo "tmp created"
 singularity exec --nv \
 --bind /scratch \
 --overlay /tmp/torch2cuda8.ext3:ro \
-/share/apps/images/cuda11.7.99-cudnn8.5-devel-ubuntu22.04.2.sif \
+/scratch/tw2672/pytorch/cuda11.7.99-cudnn8.5-devel-ubuntu22.04.2.sif \
 /bin/bash -c "
 source /ext3/env.sh;python main.py --fname configs/in1k_vith14_ep300.yaml
 "
