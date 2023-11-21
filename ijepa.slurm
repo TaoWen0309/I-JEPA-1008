@@ -32,8 +32,10 @@ echo "tmp created"
 
 singularity exec --nv \
 --bind /scratch \
---overlay /tmp/torch2cuda8.ext3:ro \
-/scratch/tw2672/pytorch/cuda11.7.99-cudnn8.5-devel-ubuntu22.04.2.sif \
+--overlay /tmp/pytorch/torch2cuda8.ext3:ro \
+/tmp/pytorch/cuda11.7.99-cudnn8.5-devel-ubuntu22.04.2.sif \
 /bin/bash -c "
-source /ext3/env.sh;python main.py --fname configs/in1k_vith14_ep300.yaml
+source /ext3/env.sh;python main_distributed.py --fname configs/in1k_vith14_ep300.yaml\
+--nodes 1 --tasks-per-node 1\
+--time 1000
 "

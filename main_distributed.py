@@ -79,7 +79,7 @@ def launch():
     executor.update_parameters(
         # slurm_partition=args.partition,
         slurm_mem_per_gpu='55G',
-        # timeout_min=args.time,
+        timeout_min=args.time,
         nodes=args.nodes,
         tasks_per_node=args.tasks_per_node,
         cpus_per_task=10,
