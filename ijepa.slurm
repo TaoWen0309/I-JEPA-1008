@@ -16,7 +16,7 @@
 #SBATCH --gres=gpu:4
 #SBATCH --cpus-per-task=24
 
-#SBATCH --time=1:00:00
+#SBATCH --time=24:00:00
 #SBATCH --job-name=ijepa
 #SBATCH --output=ijepa.out
 #SBATCH --error=ijepa.err
@@ -36,5 +36,5 @@ source /ext3/env.sh;python main_distributed.py --fname configs/in1k_vith14_ep300
 --partition n1c24m128-v100-4 \
 --nodes 1 \
 --tasks-per-node 1 \
---time 1000
+--time 2000
 "
