@@ -5,7 +5,7 @@
 
 ## change the partition number to use different number of GPUs
 #SBATCH --partition=n1s8-v100-1
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:8
 #SBATCH --cpus-per-task=8
 
 ##SBATCH --partition=n1s16-v100-2
