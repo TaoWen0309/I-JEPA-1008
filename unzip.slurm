@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ## change the last two digits to your team id
-#SBATCH --account=tw2672
+#SBATCH --account=csci_ga_2572_001-2023fa-15
 
 ## change the partition number to use different number of GPUs
-#SBATCH --partition=c2s60p
+#SBATCH --partition=n2c80m80
 #SBATCH --cpus-per-task=24
 
 #SBATCH --time=4:00:00
