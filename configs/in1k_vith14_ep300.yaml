@@ -6,7 +6,7 @@ data:
   - 1.0
   crop_size: 224
   image_folder: tmp_images/
-  num_workers: 2
+  num_workers: 10
   pin_mem: true
   root_path: /scratch/tw2672/
   use_color_distortion: false
