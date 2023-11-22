@@ -5,10 +5,10 @@ data:
   - 0.3
   - 1.0
   crop_size: 224
-  image_folder: tmp_images/
+  image_folder: unlabeled/
   num_workers: 10
   pin_mem: true
-  root_path: /scratch/tw2672/
+  root_path: /scratch/tw2672/dataset/Dataset_Student
   use_color_distortion: false
   use_gaussian_blur: false
   use_horizontal_flip: false
@@ -33,7 +33,7 @@ mask:
 meta:
   copy_data: false
   load_checkpoint: false
-  model_name: vit_small # vit_huge
+  model_name: vit_small
   pred_depth: 12
   pred_emb_dim: 384
   read_checkpoint: null
