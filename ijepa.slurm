@@ -17,7 +17,6 @@
 #SBATCH --cpus-per-task=24
 
 #SBATCH --time=1:00:00
-#SBATCH --mem=100GB
 #SBATCH --job-name=ijepa
 #SBATCH --output=ijepa.out
 #SBATCH --error=ijepa.err
