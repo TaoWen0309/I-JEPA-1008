@@ -4,7 +4,7 @@
 #SBATCH --account=csci_ga_2572_001-2023fa-15
 
 ## change the partition number to use different number of GPUs
-#SBATCH --partition=n1c24m128-v100-4
+#SBATCH --partition=c2s60p
 #SBATCH --cpus-per-task=24
 
 #SBATCH --time=4:00:00
