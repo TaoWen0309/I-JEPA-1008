@@ -4,11 +4,16 @@
 #SBATCH --account=csci_ga_2572_001-2023fa-15
 
 ## change the partition number to use different number of GPUs
-#SBATCH --partition=n2c80m80
-#SBATCH --cpus-per-task=24
+#SBATCH --partition=n1s8-v100-1
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=8
 
-#SBATCH --time=4:00:00
+#SBATCH --time=2:00:00
 #SBATCH --job-name=unzip
+#SBATCH --output=unzip.out
+#SBATCH --error=unzip.err
+#SBATCH --exclusive
+#SBATCH --requeue
 
 mkdir /tmp/$USER
 export SINGULARITY_CACHEDIR=/tmp/$USER
