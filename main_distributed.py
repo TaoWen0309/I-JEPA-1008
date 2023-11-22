@@ -97,7 +97,7 @@ def launch():
 
     for job in jobs:
         print(job.job_id)
-        print(job.result())
+        output = job.result()
 
 
 if __name__ == '__main__':
