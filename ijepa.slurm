@@ -16,7 +16,7 @@
 #SBATCH --gres=gpu:4
 #SBATCH --cpus-per-task=24
 
-#SBATCH --time=2:00:00
+#SBATCH --time=12:00:00
 #SBATCH --job-name=ijepa
 #SBATCH --output=ijepa.out
 #SBATCH --error=ijepa.err
