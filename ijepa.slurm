@@ -18,8 +18,8 @@
 
 #SBATCH --time=2:00:00
 #SBATCH --job-name=ijepa
-#SBATCH --output=demo_%j.out
-#SBATCH --error=demo_%j.err
+#SBATCH --output=ijepa.out
+#SBATCH --error=ijepa.err
 #SBATCH --exclusive
 #SBATCH --requeue
 
