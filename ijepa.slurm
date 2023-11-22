@@ -33,7 +33,7 @@ singularity exec --nv \
 /bin/bash -c "
 source /ext3/env.sh;python main_distributed.py --fname configs/in1k_vith14_ep300.yaml \
 --folder /scratch/tw2672/ijepa \
---partition n1s8-v100-1 \
+--partition n1c24m128-v100-4 \
 --nodes 1 \
 --tasks-per-node 1 \
 --time 1000
