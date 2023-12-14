@@ -2,3 +2,5 @@
 *.SBATCH
 *.pyc
 __pycache__/
+images/*
+*.pth.tar
